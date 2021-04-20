@@ -6,7 +6,6 @@ import os
 
 intents=discord.Intents()
 intents.members = True
-TOKEN = "my token"
 
 app = commands.Bot(command_prefix='>>', intents=intents)
 
@@ -138,5 +137,6 @@ async def _warn_error(ctx, error):
         await ctx.send("{}님, 당신은 이 명령을 쓸 권한이 없습니다.".format(ctx.message.author))
 
 
-#app.remove_command("help")
-app.run(TOKEN)
+app.remove_command("help")
+access_token = os.environ["BOT_TOKEN"]
+app.run(access_token)
