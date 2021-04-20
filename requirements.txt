@@ -1,5 +1,2 @@
 asyncio
 discord.py
-commands
-get
-os
