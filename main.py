@@ -138,5 +138,5 @@ async def _warn_error(ctx, error):
 
 
 app.remove_command("help")
-access_token = os.environ[BOT_TOKEN]
+access_token = os.environ["BOT_TOKEN"]
 app.run(access_token)
