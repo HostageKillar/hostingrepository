@@ -4,6 +4,9 @@ from discord.ext import commands
 from discord.utils import get
 import os
 
+intents = discord.Intents.default()
+intents.members = True
+
 app = commands.Bot(command_prefix='>>', intents=intents)
 
 
